@@ -23,26 +23,26 @@
 
 			<div class="container">  
   				<form id="contact" action="" method="post">
-   					 <h2>Quick Contact</h2>
-    					<fieldset>
-      						<input placeholder="Your name" type="text" tabindex="1" required autofocus>
-    					</fieldset>
-    					<fieldset>
-      						<input placeholder="Your Email Address" type="email" tabindex="2" required>
-    					</fieldset>
-    					<fieldset>
-      						<input placeholder="Your Web Site starts with http://" type="url" tabindex="4" required>
-    					</fieldset>
-   						 <fieldset>
-      						<textarea placeholder="Type your Message Here...." tabindex="5" required></textarea>
-    					</fieldset>
-    					<fieldset>
-      						<button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
-    					</fieldset>
-  					</form>
-				</div>
-				</form>	
+   					 <h2>Send Me a Message</h2>
 
+   					 <form action="/my-handling-form-page" method="post">
+   					 	<div>
+   					 		<label for="name">Name:</label>
+   					 		<input type="text" id="name" name="user_name" placeholder="Virginia Dare" required="required">
+   					 	</div>
+   					 	<div>
+   					 		<label for="mail">E-mail:</label>
+   					 		<input type="email" id="mail" name="user_mail" placeholder="vdare@email.com" required="required">
+   					 	</div>
+   					 	<div>
+   					 		<label for="msg">Your Message:</label>
+   					 		<textarea id="msg" name="user_message"></textarea>
+   					 	</div>
+   					 	<div class="button">
+  							<button type="submit">Send your message</button>
+						</div>
+   					 </form>			 
+   				</div>
 			</section>
 
 			<aside>
